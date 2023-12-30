@@ -1,0 +1,7 @@
+{% extends "templates/base.njk" %}
+
+{% block content %}
+<h1>Publishing/Curation</h1>
+
+<p>Paragraph</p>
+{% endblock %}

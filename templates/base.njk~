@@ -1,0 +1,6 @@
+<header>
+<a href="/">AlDacMac.dev!</a>
+{% include "sections/sectionlist.njk" %}
+</header>
+
+{% block content %}{% endblock %}

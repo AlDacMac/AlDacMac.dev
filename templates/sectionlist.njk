@@ -1,0 +1,5 @@
+<ul>
+{% for dir in sectionlist %}
+   <li><a href="/sections/{{ dir.name }}">{{ dir.display_name }}</a></li>
+{% endfor %}
+</ul>
