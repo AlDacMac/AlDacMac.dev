@@ -1,6 +1,12 @@
 <header>
 <a href="/">AlDacMac.dev!</a>
-{% include "templates/sectionlist.njk" %}
+<ul>
+{% for section in collections.sections %}
+   <li><a href="{{ section.url }}">{{ section.data.title }}</a></li>
+{% endfor %}
+</ul>
 </header>
 
+<main>
 {% block content %}{% endblock %}
+</main>

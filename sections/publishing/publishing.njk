@@ -1,0 +1,18 @@
+---
+permalink: "publishing/"
+title: Publishing and Curation
+tags: sections
+---
+{% extends "templates/base.njk" %}
+
+{% block content %}
+<h1>Publishing & Curation</h1>
+
+{%- for post in collections.curation_posts -%}
+<article>
+<h2 id={{post.data.title | slugify}}><a href="{{post.data.link}}">{{post.data.title}}</a></h2>
+{{post.content | safe}}
+</article>
+{%- endfor -%}
+
+{% endblock %}
